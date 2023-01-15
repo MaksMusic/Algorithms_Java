@@ -1,3 +1,5 @@
+package Workin_with_Strings;
+
 public class NumberOfLetters {
     public static void main(String[] args) {
         buildDictionary("Hello");
@@ -5,7 +7,7 @@ public class NumberOfLetters {
     static void  buildDictionary(String text){
         text = text.toLowerCase();
 
-        int[] result = new int['я' - 'а' + 1]; //32 длинна
+        int[] result = new int['я' - 'а' + 1]; //32 length
         System.out.println('а'+ 1);
         for(int i = 0; i < text.length(); i++){
             char ch = text.charAt(i);
