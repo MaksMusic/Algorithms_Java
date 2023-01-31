@@ -1,4 +1,4 @@
-package Search;
+package Search.typeSearch;
 
 public class LinearSearch {
     public static void main(String[] args) {

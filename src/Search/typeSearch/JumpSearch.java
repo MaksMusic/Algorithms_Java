@@ -1,11 +1,11 @@
-package Search;
+package Search.typeSearch;
 
 import java.util.Arrays;
 
 public class JumpSearch {
     public static void main(String[] args) {
         int index = jumpSearch(
-                new int[] {2,4,5,6,3,4,3,2,110,3,2,123,23,23,4,42,42,4,24,23,42,34,10,423},10);
+        new int[] {2,4,5,6,3,4,3,2,110,3,2,123,23,23,4,42,42,4,24,23,42,34,10,423},10);
         System.out.println(index);
 
     }
