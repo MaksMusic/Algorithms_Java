@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SearchUniqueNumber {
+    public volatile  int f   = 10;
+
     public static void main(String[] args) {
         int []  box = {1,1,1,1,1,1,1,1,1,1,21,3,1,33,123,1};
         System.out.println(searchUnique(box));

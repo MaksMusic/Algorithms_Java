@@ -4,11 +4,10 @@ import java.util.Arrays;
 
 public class ArrayMergingClassArrays {
     public static void main(String[] args) {
-        int [] ass1 = {1,6,2,3,4,5,6,7,8,9,10};
-        int [] ass2 = {21,20,19,18,17,16,15,14,13,12,11,10};
-        System.out.println(Arrays.toString(mergeAndSort(ass1,ass2)));
+        int[] ass1 = {1, 6, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] ass2 = {21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10};
+        System.out.println(Arrays.toString(mergeAndSort(ass1, ass2)));
     }
-
 
 
     // Метод объединения двух массивов и сортировка
@@ -21,4 +20,6 @@ public class ArrayMergingClassArrays {
         Arrays.sort(array);
         return array;
     }
+
 }
+
