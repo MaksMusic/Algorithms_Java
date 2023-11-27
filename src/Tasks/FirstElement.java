@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Необходимо реализовать метод, который вернет первое значение представленные в единственном виде.
+ * РќРµРѕР±С…РѕРґРёРјРѕ СЂРµР°Р»РёР·РѕРІР°С‚СЊ РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅРµС‚ РїРµСЂРІРѕРµ Р·РЅР°С‡РµРЅРёРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРЅС‹Рµ РІ РµРґРёРЅСЃС‚РІРµРЅРЅРѕРј РІРёРґРµ.
  */
 
 public class FirstElement {
@@ -15,9 +15,9 @@ public class FirstElement {
         Integer result = find(arr);
 
         if (result != null) {
-            System.out.println(" 1 не повторяющийся элемент " + result);
+            System.out.println(" 1 РЅРµ РїРѕРІС‚РѕСЂСЏСЋС‰РёР№СЃСЏ СЌР»РµРјРµРЅС‚ " + result);
         } else {
-            System.out.println("не найдено");
+            System.out.println("РЅРµ РЅР°Р№РґРµРЅРѕ");
         }
 
 
@@ -26,13 +26,13 @@ public class FirstElement {
     public static Integer find(Integer[] arr) {
         Map<Integer,Integer> elements = new HashMap<>();
 
-        // Проходим по массиву и обновляем сколько раз элемент встречается в HashMap
+        // РџСЂРѕС…РѕРґРёРј РїРѕ РјР°СЃСЃРёРІСѓ Рё РѕР±РЅРѕРІР»СЏРµРј СЃРєРѕР»СЊРєРѕ СЂР°Р· СЌР»РµРјРµРЅС‚ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РІ HashMap
         for( Integer el : arr) {
             elements.put(el, elements.getOrDefault(el, 0) + 1);
         }
 
         for (Map.Entry<Integer,Integer> entry : elements.entrySet() ) {
-            // Если частота элемента равна 1, то это первый неповторяющийся элемент
+            // Р•СЃР»Рё С‡Р°СЃС‚РѕС‚Р° СЌР»РµРјРµРЅС‚Р° СЂР°РІРЅР° 1, С‚Рѕ СЌС‚Рѕ РїРµСЂРІС‹Р№ РЅРµРїРѕРІС‚РѕСЂСЏСЋС‰РёР№СЃСЏ СЌР»РµРјРµРЅС‚
             if( entry.getValue() == 1) {
                 return entry.getKey();
             }
