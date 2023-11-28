@@ -2,10 +2,10 @@ package Tasks;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
 /**
  * Метод для возвращения всех повторяющихся элементов массива:
  */
+
 public class RepeatingElements {
     public static void main(String[] args) {
         int[] arr = {9, 7,9, 9, -1, 6, 7, -1, 4, 5};
@@ -53,7 +53,6 @@ public class RepeatingElements {
                 elementCount.put(num, 0);
             }
         }
-
         // Возвращаем список повторяющихся элементов
         return duplicates;
     }
