@@ -18,7 +18,6 @@ public class RepeatingElements {
 
     }
 
-
     //лист
     public static List<Integer> repeating(List<Integer> list){
         return list.stream()
