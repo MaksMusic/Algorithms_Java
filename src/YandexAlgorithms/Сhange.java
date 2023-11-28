@@ -3,7 +3,7 @@ package YandexAlgorithms;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ñhange {
+public class Ð¡hange {
     public static void main(String[] args) {
         System.out.println(returnChange(177,5,new ArrayList<>(List.of(100,50,10,5,1))));
     }
