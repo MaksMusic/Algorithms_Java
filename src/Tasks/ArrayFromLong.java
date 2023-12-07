@@ -3,9 +3,10 @@ package Tasks;
 import java.util.Arrays;
 
 /**
- * Получить массив строк  из числа Long где каждое число в отдельной ячейке
- * Пример передаем  метод строку 11197
- * вывод массив
+ * Р—Р°РґР°С‡Р° СЃ СЃРѕР±РµСЃР° 5
+ * РџРѕР»СѓС‡РёС‚СЊ РјР°СЃСЃРёРІ С‡РёСЃРµР»  РёР· С‡РёСЃР»Р° Long РіРґРµ РєР°Р¶РґРѕРµ С‡РёСЃР»Рѕ РІ РѕС‚РґРµР»СЊРЅРѕР№ СЏС‡РµР№РєРµ
+ * РџСЂРёРјРµСЂ РїРµСЂРµРґР°РµРј  РјРµС‚РѕРґ С‡РёСЃР»Рѕ 11197
+ * РІС‹РІРѕРґ РјР°СЃСЃРёРІ Integer
  * (1,1,1,9,7)
  */
 public class ArrayFromLong {
@@ -14,8 +15,8 @@ public class ArrayFromLong {
     }
 
 
-    public static int[] toArray(long n){
-        int [] array = new int[Long.toString(n).length()];
+    public static int[] toArray(long n) {
+        int[] array = new int[Long.toString(n).length()];
         for (int i = 0; i < array.length; i++) {
             array[i] = Integer.parseInt(String.valueOf(Long.toString(n).charAt(i)));
         }
